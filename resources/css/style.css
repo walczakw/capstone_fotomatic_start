@@ -5,11 +5,12 @@ html {
   font-size: 16px;
 }
 
-body, header, .main-content {
+body {
   margin: 0 auto;
 }
 
 .main-content {
+  border: 3px solid red;
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
@@ -35,7 +36,7 @@ body, header, .main-content {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -44,6 +45,7 @@ body, header, .main-content {
 /* Header */
 
 header {
+  border: 3px solid red;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -87,7 +89,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
 
   header {
     height: auto;
@@ -110,7 +112,6 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
   }
 
   header .mobile li {
@@ -196,7 +197,7 @@ header .mobile {
   line-height: 1.4;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -228,7 +229,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 
   #sign-up-section {
     height: 20rem;
@@ -303,7 +304,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -348,7 +349,7 @@ header .mobile {
   display: flex;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -404,7 +405,7 @@ header .mobile {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #quotes-section .content {
     padding: 1.875rem .625rem;
   }
@@ -419,6 +420,25 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #quotes-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #quotes-section .quote {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  #quotes-section .quote-citation {
+    height: auto;
+    margin: 0;
   }
 }
 
@@ -443,8 +463,13 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
-  footer .content {
-    font-size: .625rem;
+@media only screen and (max-width: 768px) {
+    .content .copyright {
+    font-size: 0.625rem;
   }
+
+  .content .location {
+  font-size: 0.625rem;
+}
+
 }
