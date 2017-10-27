@@ -12,6 +12,7 @@ body {
 .main-content {
   border: 3px solid red;
   position: relative;
+
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
@@ -93,7 +94,6 @@ header .mobile {
 
   header {
     height: auto;
-    width: 100%;
   }
 
   header .desktop {
@@ -102,11 +102,11 @@ header .mobile {
 
   header .mobile {
     display: block;
-    width: 100%;
   }
 
   header .content {
     padding: .5rem 0;
+    max-width: 100%;
   }
 
   header .mobile ul {
