@@ -93,6 +93,7 @@ header .mobile {
 
   header {
     height: auto;
+    width: 100%;
   }
 
   header .desktop {
