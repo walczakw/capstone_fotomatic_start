@@ -55,9 +55,9 @@ header {
 }
 
 header .content {
+  padding: 1.875rem;
   display: flex;
   align-items: center;
-  padding: 1.875rem;
 }
 
 header .logo {
@@ -111,7 +111,6 @@ header .mobile {
   header .mobile ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 
   header .mobile li {
