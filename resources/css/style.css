@@ -102,11 +102,12 @@ header .mobile {
 
   header .mobile {
     display: block;
+    width: 100%;
   }
 
   header .content {
     padding: .5rem 0;
-    max-width: 100%;
+    width: 90%;
   }
 
   header .mobile ul {
