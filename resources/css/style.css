@@ -10,9 +10,7 @@ body {
 }
 
 .main-content {
-  border: 3px solid red;
   position: relative;
-
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
@@ -46,7 +44,6 @@ body {
 /* Header */
 
 header {
-  border: 3px solid red;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -211,6 +208,7 @@ header .mobile {
     background-color: transparent;
     border: none;
     margin: 0 auto;
+    padding: 0;
   }
 
   #sign-up-cta .content {
