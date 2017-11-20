@@ -104,7 +104,6 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
-    width: 90%;
   }
 
   header .mobile ul {
@@ -173,7 +172,6 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
-  margin-top: 32px;
 }
 
 #sign-up-cta .striking {
@@ -203,7 +201,7 @@ header .mobile {
   }
 
   #sign-up-cta {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: transparent;
     border: none;
@@ -232,6 +230,10 @@ header .mobile {
 
   #sign-up-section {
     height: 20rem;
+  }
+
+  #sign-up-cta .content {
+    width: 100%;
   }
 
   #sign-up-cta .content h1 {
